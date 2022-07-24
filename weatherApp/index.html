@@ -8,8 +8,17 @@
     <title>Document</title>
   </head>
   <body>
-    <script src="./script.js">
-      
-    </script>
+    <div class="weatherContainer">
+      <h1 class="location"> </h1>
+      <img class="imgIcon" src="" alt="icon" />
+      <h2 class="temperature"></h2>
+    </div>
+    <form onsubmit="return false">
+      <input class="inputLocation" type="text" placeholder="Location" />
+      <button class="btnSearch" onclick="searchClicked()">Search</button>
+    </form>
+    
+
+    <script src="./script.js"></script>
   </body>
 </html>

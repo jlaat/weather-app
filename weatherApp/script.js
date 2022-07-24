@@ -18,5 +18,36 @@ const processData = (data) => {
     temperature: data.main.temp,
     icon: data.weather[0].icon,
   };
-  console.log(weatherData);
+  refreshWeatherDisplay(weatherData);
 };
+
+// Eventlistener for 'Search' button
+const searchClicked = () => {
+  const location = document.querySelector(".inputLocation");
+  console.log(location.value);
+  fetchData(location.value);
+};
+
+
+const refreshWeatherDisplay = (weatherObject) => {
+  changeIcon(weatherObject.icon);
+  changeLocation(weatherObject.location);
+  changeTemperature(weatherObject.temperature);
+};
+
+const changeIcon = (iconName) => {
+  let imgIcon = (document.querySelector(
+    ".imgIcon"
+  ).src = `http://openweathermap.org/img/wn/${iconName}@2x.png`);
+};
+const changeTemperature = (newTemperature) => {
+  let divTemperature = (document.querySelector(".temperature").textContent =`Temperature: 
+    ${newTemperature} °C`);
+};
+const changeLocation = (newLocation) => {
+  let divLocation = (document.querySelector(".location").textContent =
+    newLocation);
+};
+
+// Display Joensuu's weather on startup
+fetchData("Joensuu");
