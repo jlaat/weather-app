@@ -1,7 +1,7 @@
 * {
     margin: 0;
-    text-align: center;
     color: antiquewhite;
+    text-align: center;
 }
 html {
     height: 100%;
@@ -30,6 +30,10 @@ form {
 
 input {
     background-color: rgba(0, 0, 0, 50%);
+    border-radius: .5em;
+    
+    height: 2em;
+    font-size: 1em;
 }
 
 button {
@@ -38,6 +42,27 @@ button {
     background-color: black;
     font-size: 1em;
     font-weight: 800;
+
+    border-radius: .5em;
+}
+h2 {
+    text-align: left;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 50%);
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+a {
+    padding-top: .5em;
 }
 
 

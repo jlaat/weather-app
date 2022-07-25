@@ -8,17 +8,33 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="weatherContainer">
+    <table>
       <h1 class="location"> </h1>
       <img class="imgIcon" src="" alt="icon" />
-      <h2 class="temperature"></h2>
-    </div>
+
+      <tr>
+      <h1 class="temperature"></h2>
+    </tr>
+
+    <tr>
+      <td><img src="./pictures/sun-wireless-outline.png"></td>
+      <td><h2 class="feelsLike"></h2></td>
+    </tr>
+
+    <tr>
+      <td><img src="./pictures/weather-windy.png"></td>
+    <td><h2 class="wind"></h2></td>
+  </tr>
+  </table>
     <form onsubmit="return false">
-      <input class="inputLocation" type="text" placeholder="Location" />
+      <input class="inputLocation" type="text" placeholder="City" />
       <button class="btnSearch" onclick="searchClicked()">Search</button>
     </form>
     
 
-    <script src="./script.js"></script>
+    <footer>
+      <a href="https://github.com/JLaat/weather-app" target="_blank"><img class="github" src="./pictures/github.png"></a>
+    </footer>
+    <script src="./index.js"></script>
   </body>
 </html>
