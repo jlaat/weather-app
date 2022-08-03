@@ -6,14 +6,15 @@
 html {
     height: 100%;
     width: 100%;
-    overflow-y: hidden;
+    overflow: hidden;
+
     
     position: absolute;
 }
 body {
     height: 100vh;
     width: 100vw;
-    overflow-y: hidden;
+    overflow: hidden;
     
     position: absolute;
 
@@ -21,7 +22,7 @@ body {
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover, 110%;
+    background-size: cover, 100%;
 
     display: flex;
     flex-direction: column;
