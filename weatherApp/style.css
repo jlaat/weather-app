@@ -22,7 +22,7 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover, 100%;
+    background-size: cover, 110%;
 
     display: flex;
     flex-direction: column;
